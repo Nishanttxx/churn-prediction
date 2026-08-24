@@ -64,16 +64,36 @@ No rows are removed because the supplied source contains no missing values, dupl
 The training engine follows a reproducible held-out evaluation workflow:
 
 ```mermaid
-flowchart LR
+flowchart TD
     A[Supplied CSV] --> B[Audit and validate]
     B --> C[Separate features and target]
-    C --> D[Stratified 80/20 split\nrandom_state = 42]
-    D --> E[Fit ColumnTransformer\non training data only]
-    E --> F[Train four classifiers]
-    F --> G[Evaluate held-out test set]
-    G --> H[Select highest F1\nthen recall, then precision]
-    H --> I[Persist pipeline and metadata]
-    I --> J[tRPC analytics and prediction procedures]
+
+    subgraph SPLIT[Reproducible split]
+        C --> D[80% train / 20% test]
+        D --> E[Stratify target<br/>random_state = 42]
+    end
+
+    subgraph TRAIN[Fit on training data only]
+        E --> F[ColumnTransformer]
+        F --> G[Scale numeric features<br/>One-hot encode categories]
+        G --> H[Train four classifiers]
+    end
+
+    subgraph EVALUATE[Evaluate and select]
+        H --> I[Score held-out test set]
+        I --> J[Compare accuracy, precision,<br/>recall, and F1 score]
+        J --> K[Select highest F1<br/>then recall, then precision]
+    end
+
+    K --> L[Persist pipeline,<br/>metrics, and feature importance]
+    L --> M[Serve typed analytics<br/>and prediction procedures]
+
+    classDef source fill:#12352b,stroke:#56d6a3,color:#e7f2eb;
+    classDef phase fill:#172820,stroke:#5c8372,color:#e7f2eb;
+    classDef decision fill:#3a2e1d,stroke:#d9a86c,color:#fff4df;
+    class A source;
+    class B,C,D,E,F,G,H,I,J,L,M phase;
+    class K decision;
 ```
 
 ### Candidate models

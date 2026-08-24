@@ -71,3 +71,7 @@ _None unresolved after typecheck, production build, tests, and preview verificat
 ## Documentation
 
 - [x] Create an attractive, accurate GitHub README covering ChurnIQ, the real dataset-backed ML workflow, setup, architecture, API procedures, validation results, and usage.
+
+## Documentation correction
+
+- [x] Fix the GitHub README training-workflow diagram so it renders as a readable responsive visual instead of a compressed horizontal strip.
