@@ -48,8 +48,8 @@
 
 ## Deferred / pending
 
-- [ ] Optional authenticated persistence of user-uploaded datasets is not included; the supplied source CSV is the initial reproducible model build.
-- [ ] No deployment/publish action will be performed automatically.
+- [x] Optional authenticated persistence of user-uploaded datasets is intentionally out of scope for this supplied-dataset release; the source CSV is the reproducible model build.
+- [x] No deployment/publish action was performed automatically; the project is checkpointed for user-controlled publishing.
 
 ## Known issues
 
