@@ -63,38 +63,19 @@ No rows are removed because the supplied source contains no missing values, dupl
 
 The training engine follows a reproducible held-out evaluation workflow:
 
-```mermaid
-flowchart TD
-    A[Supplied CSV] --> B[Audit and validate]
-    B --> C[Separate features and target]
+| Step | Workflow stage | What happens |
+| ---: | --- | --- |
+| **01** | **Source** | Load the supplied CSV and audit schema, quality, categories, ranges, and target distribution. |
+| **02** | **Feature boundary** | Separate `X` and `y`; exclude `CustomerID` and keep `Churn` out of the input features. |
+| **03** | **Reproducible split** | Create an 80/20 stratified train/test split with `random_state=42`. |
+| **04** | **Preprocessing** | Fit `ColumnTransformer` on training data only: scale numeric features and one-hot encode categories. |
+| **05** | **Model training** | Train Logistic Regression, Random Forest, calibrated SVM, and KNN pipelines. |
+| **06** | **Held-out evaluation** | Calculate accuracy, precision, recall, F1 score, and the confusion matrix on the untouched test set. |
+| **07** | **Model selection** | Select the highest F1 score, then use recall and precision as tie-breakers. |
+| **08** | **Persistence** | Save the selected pipeline, candidate models, metadata, metrics, and encoded feature importance. |
+| **09** | **Product layer** | Serve the persisted outputs through typed analytics, explorer, and customer-prediction procedures. |
 
-    subgraph SPLIT[Reproducible split]
-        C --> D[80% train / 20% test]
-        D --> E[Stratify target<br/>random_state = 42]
-    end
-
-    subgraph TRAIN[Fit on training data only]
-        E --> F[ColumnTransformer]
-        F --> G[Scale numeric features<br/>One-hot encode categories]
-        G --> H[Train four classifiers]
-    end
-
-    subgraph EVALUATE[Evaluate and select]
-        H --> I[Score held-out test set]
-        I --> J[Compare accuracy, precision,<br/>recall, and F1 score]
-        J --> K[Select highest F1<br/>then recall, then precision]
-    end
-
-    K --> L[Persist pipeline,<br/>metrics, and feature importance]
-    L --> M[Serve typed analytics<br/>and prediction procedures]
-
-    classDef source fill:#12352b,stroke:#56d6a3,color:#e7f2eb;
-    classDef phase fill:#172820,stroke:#5c8372,color:#e7f2eb;
-    classDef decision fill:#3a2e1d,stroke:#d9a86c,color:#fff4df;
-    class A source;
-    class B,C,D,E,F,G,H,I,J,L,M phase;
-    class K decision;
-```
+> **Why this format?** GitHub renders this table natively, so the workflow text remains readable in both light and dark repository themes without Mermaid color overrides.
 
 ### Candidate models
 

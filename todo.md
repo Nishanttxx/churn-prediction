@@ -75,3 +75,11 @@ _None unresolved after typecheck, production build, tests, and preview verificat
 ## Documentation correction
 
 - [x] Fix the GitHub README training-workflow diagram so it renders as a readable responsive visual instead of a compressed horizontal strip.
+
+## Documentation contrast correction
+
+- [x] Fix Mermaid workflow box text contrast so labels remain visible in GitHub themes.
+
+## GitHub rendering correction
+
+- [x] Replace the theme-sensitive Mermaid workflow boxes with a GitHub-safe, high-contrast Markdown workflow table and verify the README rendering source.
