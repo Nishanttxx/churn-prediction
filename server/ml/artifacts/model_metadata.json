@@ -1,0 +1,264 @@
+{
+  "model_name": "Random Forest",
+  "metrics": {
+    "accuracy": 0.998447,
+    "precision": 0.999343,
+    "recall": 0.997377,
+    "f1_score": 0.998359,
+    "training_time_seconds": 0.938,
+    "confusion_matrix": {
+      "true_negative": 6772,
+      "false_positive": 4,
+      "false_negative": 16,
+      "true_positive": 6083
+    }
+  },
+  "models": {
+    "Logistic Regression": {
+      "accuracy": 0.827029,
+      "precision": 0.813573,
+      "recall": 0.823578,
+      "f1_score": 0.818545,
+      "training_time_seconds": 0.146,
+      "confusion_matrix": {
+        "true_negative": 5625,
+        "false_positive": 1151,
+        "false_negative": 1076,
+        "true_positive": 5023
+      }
+    },
+    "Random Forest": {
+      "accuracy": 0.998447,
+      "precision": 0.999343,
+      "recall": 0.997377,
+      "f1_score": 0.998359,
+      "training_time_seconds": 0.938,
+      "confusion_matrix": {
+        "true_negative": 6772,
+        "false_positive": 4,
+        "false_negative": 16,
+        "true_positive": 6083
+      }
+    },
+    "Support Vector Machine": {
+      "accuracy": 0.827029,
+      "precision": 0.813066,
+      "recall": 0.824397,
+      "f1_score": 0.818693,
+      "training_time_seconds": 2.457,
+      "confusion_matrix": {
+        "true_negative": 5620,
+        "false_positive": 1156,
+        "false_negative": 1071,
+        "true_positive": 5028
+      }
+    },
+    "K-Nearest Neighbors": {
+      "accuracy": 0.916505,
+      "precision": 0.883629,
+      "recall": 0.94868,
+      "f1_score": 0.915,
+      "training_time_seconds": 4.058,
+      "confusion_matrix": {
+        "true_negative": 6014,
+        "false_positive": 762,
+        "false_negative": 313,
+        "true_positive": 5786
+      }
+    }
+  },
+  "training_rows": 51499,
+  "testing_rows": 12875,
+  "features": [
+    "Age",
+    "Tenure",
+    "Usage Frequency",
+    "Support Calls",
+    "Payment Delay",
+    "Total Spend",
+    "Last Interaction",
+    "Gender",
+    "Subscription Type",
+    "Contract Length"
+  ],
+  "numeric_features": [
+    "Age",
+    "Tenure",
+    "Usage Frequency",
+    "Support Calls",
+    "Payment Delay",
+    "Total Spend",
+    "Last Interaction"
+  ],
+  "categorical_features": [
+    "Gender",
+    "Subscription Type",
+    "Contract Length"
+  ],
+  "encoded_feature_count": 15,
+  "selection_rule": "Highest held-out F1 score, then recall, then precision.",
+  "split": {
+    "test_size": 0.2,
+    "random_state": 42,
+    "stratified": true
+  },
+  "trained_at": "2026-08-24T18:32:09.681388+00:00",
+  "total_training_time_seconds": 7.635,
+  "dataset_audit": {
+    "source_file": "customer_churn_dataset-testing-master.csv",
+    "rows": 64374,
+    "columns": 12,
+    "column_names": [
+      "CustomerID",
+      "Age",
+      "Gender",
+      "Tenure",
+      "Usage Frequency",
+      "Support Calls",
+      "Payment Delay",
+      "Subscription Type",
+      "Contract Length",
+      "Total Spend",
+      "Last Interaction",
+      "Churn"
+    ],
+    "missing_values": {
+      "CustomerID": 0,
+      "Age": 0,
+      "Gender": 0,
+      "Tenure": 0,
+      "Usage Frequency": 0,
+      "Support Calls": 0,
+      "Payment Delay": 0,
+      "Subscription Type": 0,
+      "Contract Length": 0,
+      "Total Spend": 0,
+      "Last Interaction": 0,
+      "Churn": 0
+    },
+    "duplicate_rows": 0,
+    "dtypes": {
+      "CustomerID": "int64",
+      "Age": "int64",
+      "Gender": "str",
+      "Tenure": "int64",
+      "Usage Frequency": "int64",
+      "Support Calls": "int64",
+      "Payment Delay": "int64",
+      "Subscription Type": "str",
+      "Contract Length": "str",
+      "Total Spend": "int64",
+      "Last Interaction": "int64",
+      "Churn": "int64"
+    },
+    "numeric_columns": [
+      "Age",
+      "Tenure",
+      "Usage Frequency",
+      "Support Calls",
+      "Payment Delay",
+      "Total Spend",
+      "Last Interaction"
+    ],
+    "categorical_columns": [
+      "Gender",
+      "Subscription Type",
+      "Contract Length"
+    ],
+    "categorical_unique_values": {
+      "Gender": [
+        "Female",
+        "Male"
+      ],
+      "Subscription Type": [
+        "Basic",
+        "Premium",
+        "Standard"
+      ],
+      "Contract Length": [
+        "Annual",
+        "Monthly",
+        "Quarterly"
+      ]
+    },
+    "target": {
+      "name": "Churn",
+      "unique_values": [
+        0,
+        1
+      ],
+      "counts": {
+        "0": 33881,
+        "1": 30493
+      },
+      "interpretation": "1 = churned, 0 = retained"
+    },
+    "numeric_ranges": {
+      "Age": {
+        "min": 18.0,
+        "max": 65.0,
+        "mean": 41.971
+      },
+      "Tenure": {
+        "min": 1.0,
+        "max": 60.0,
+        "mean": 31.995
+      },
+      "Usage Frequency": {
+        "min": 1.0,
+        "max": 30.0,
+        "mean": 15.08
+      },
+      "Support Calls": {
+        "min": 0.0,
+        "max": 10.0,
+        "mean": 5.401
+      },
+      "Payment Delay": {
+        "min": 0.0,
+        "max": 30.0,
+        "mean": 17.134
+      },
+      "Total Spend": {
+        "min": 100.0,
+        "max": 1000.0,
+        "mean": 541.023
+      },
+      "Last Interaction": {
+        "min": 1.0,
+        "max": 30.0,
+        "mean": 15.499
+      }
+    },
+    "negative_counts": {
+      "Age": 0,
+      "Tenure": 0,
+      "Usage Frequency": 0,
+      "Support Calls": 0,
+      "Payment Delay": 0,
+      "Total Spend": 0,
+      "Last Interaction": 0
+    },
+    "feature_set": [
+      "Age",
+      "Tenure",
+      "Usage Frequency",
+      "Support Calls",
+      "Payment Delay",
+      "Total Spend",
+      "Last Interaction",
+      "Gender",
+      "Subscription Type",
+      "Contract Length"
+    ],
+    "excluded_features": [
+      "CustomerID",
+      "Churn"
+    ],
+    "cleaning_assumptions": [
+      "No rows were removed: the source contains no missing values, duplicate rows, or negative numeric observations.",
+      "Churn is already numeric binary 0/1 and is used only as the target.",
+      "CustomerID is retained for display only and excluded from preprocessing and model training."
+    ]
+  }
+}

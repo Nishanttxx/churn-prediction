@@ -1,0 +1,62 @@
+[
+  {
+    "feature": "Payment Delay",
+    "importance": 0.44308721
+  },
+  {
+    "feature": "Support Calls",
+    "importance": 0.16673434
+  },
+  {
+    "feature": "Tenure",
+    "importance": 0.11709261
+  },
+  {
+    "feature": "Usage Frequency",
+    "importance": 0.08223932
+  },
+  {
+    "feature": "Total Spend",
+    "importance": 0.04915767
+  },
+  {
+    "feature": "Age",
+    "importance": 0.03708241
+  },
+  {
+    "feature": "Gender_Male",
+    "importance": 0.03341255
+  },
+  {
+    "feature": "Gender_Female",
+    "importance": 0.02934745
+  },
+  {
+    "feature": "Contract Length_Monthly",
+    "importance": 0.01385044
+  },
+  {
+    "feature": "Last Interaction",
+    "importance": 0.00985106
+  },
+  {
+    "feature": "Contract Length_Annual",
+    "importance": 0.00775266
+  },
+  {
+    "feature": "Contract Length_Quarterly",
+    "importance": 0.00597965
+  },
+  {
+    "feature": "Subscription Type_Basic",
+    "importance": 0.00173419
+  },
+  {
+    "feature": "Subscription Type_Premium",
+    "importance": 0.00137032
+  },
+  {
+    "feature": "Subscription Type_Standard",
+    "importance": 0.00130812
+  }
+]

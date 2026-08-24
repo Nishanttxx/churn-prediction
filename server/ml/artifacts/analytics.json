@@ -1,0 +1,931 @@
+{
+  "kpis": {
+    "total_customers": 64374,
+    "churned_customers": 30493,
+    "retained_customers": 33881,
+    "churn_rate": 0.473685
+  },
+  "distribution": [
+    {
+      "name": "Retained",
+      "value": 33881
+    },
+    {
+      "name": "Churned",
+      "value": 30493
+    }
+  ],
+  "risk_distribution": [
+    {
+      "name": "Low risk",
+      "value": 33864
+    },
+    {
+      "name": "Medium risk",
+      "value": 190
+    },
+    {
+      "name": "High risk",
+      "value": 30320
+    }
+  ],
+  "demographics": {
+    "age": [
+      {
+        "name": "18\u201329",
+        "churn_rate": 0.444909,
+        "customers": 15547
+      },
+      {
+        "name": "30\u201339",
+        "churn_rate": 0.446784,
+        "customers": 13248
+      },
+      {
+        "name": "40\u201349",
+        "churn_rate": 0.446108,
+        "customers": 12961
+      },
+      {
+        "name": "50\u201365",
+        "churn_rate": 0.525024,
+        "customers": 22618
+      }
+    ],
+    "gender": [
+      {
+        "name": "Female",
+        "churn_rate": 0.55049,
+        "customers": 34353
+      },
+      {
+        "name": "Male",
+        "churn_rate": 0.385797,
+        "customers": 30021
+      }
+    ]
+  },
+  "by_subscription": [
+    {
+      "name": "Basic",
+      "churn_rate": 0.482775,
+      "customers": 21451
+    },
+    {
+      "name": "Premium",
+      "churn_rate": 0.464964,
+      "customers": 21421
+    },
+    {
+      "name": "Standard",
+      "churn_rate": 0.473305,
+      "customers": 21502
+    }
+  ],
+  "by_contract": [
+    {
+      "name": "Annual",
+      "churn_rate": 0.462167,
+      "customers": 21410
+    },
+    {
+      "name": "Monthly",
+      "churn_rate": 0.516087,
+      "customers": 22130
+    },
+    {
+      "name": "Quarterly",
+      "churn_rate": 0.440482,
+      "customers": 20834
+    }
+  ],
+  "behavior": [
+    {
+      "feature": "Age",
+      "buckets": [
+        {
+          "name": "(17.999, 27.0]",
+          "churn_rate": 0.448103,
+          "customers": 12939
+        },
+        {
+          "name": "(27.0, 37.0]",
+          "churn_rate": 0.441443,
+          "customers": 13218
+        },
+        {
+          "name": "(37.0, 47.0]",
+          "churn_rate": 0.447376,
+          "customers": 13036
+        },
+        {
+          "name": "(47.0, 56.0]",
+          "churn_rate": 0.506588,
+          "customers": 12446
+        },
+        {
+          "name": "(56.0, 65.0]",
+          "churn_rate": 0.527915,
+          "customers": 12735
+        }
+      ]
+    },
+    {
+      "feature": "Tenure",
+      "buckets": [
+        {
+          "name": "(0.999, 14.0]",
+          "churn_rate": 0.313065,
+          "customers": 13173
+        },
+        {
+          "name": "(14.0, 27.0]",
+          "churn_rate": 0.382898,
+          "customers": 12946
+        },
+        {
+          "name": "(27.0, 38.0]",
+          "churn_rate": 0.562105,
+          "customers": 12656
+        },
+        {
+          "name": "(38.0, 49.0]",
+          "churn_rate": 0.56226,
+          "customers": 12777
+        },
+        {
+          "name": "(49.0, 60.0]",
+          "churn_rate": 0.554828,
+          "customers": 12822
+        }
+      ]
+    },
+    {
+      "feature": "Usage Frequency",
+      "buckets": [
+        {
+          "name": "(0.999, 6.0]",
+          "churn_rate": 0.61776,
+          "customers": 14572
+        },
+        {
+          "name": "(6.0, 12.0]",
+          "churn_rate": 0.425965,
+          "customers": 12440
+        },
+        {
+          "name": "(12.0, 18.0]",
+          "churn_rate": 0.432668,
+          "customers": 12416
+        },
+        {
+          "name": "(18.0, 24.0]",
+          "churn_rate": 0.43677,
+          "customers": 12494
+        },
+        {
+          "name": "(24.0, 30.0]",
+          "churn_rate": 0.430694,
+          "customers": 12452
+        }
+      ]
+    },
+    {
+      "feature": "Support Calls",
+      "buckets": [
+        {
+          "name": "(-0.001, 2.0]",
+          "churn_rate": 0.234226,
+          "customers": 14708
+        },
+        {
+          "name": "(2.0, 5.0]",
+          "churn_rate": 0.413662,
+          "customers": 16528
+        },
+        {
+          "name": "(5.0, 7.0]",
+          "churn_rate": 0.61195,
+          "customers": 13238
+        },
+        {
+          "name": "(7.0, 9.0]",
+          "churn_rate": 0.609329,
+          "customers": 13313
+        },
+        {
+          "name": "(9.0, 10.0]",
+          "churn_rate": 0.606953,
+          "customers": 6587
+        }
+      ]
+    },
+    {
+      "feature": "Payment Delay",
+      "buckets": [
+        {
+          "name": "(-0.001, 8.0]",
+          "churn_rate": 0.1007,
+          "customers": 14002
+        },
+        {
+          "name": "(8.0, 16.0]",
+          "churn_rate": 0.184909,
+          "customers": 13531
+        },
+        {
+          "name": "(16.0, 21.0]",
+          "churn_rate": 0.630114,
+          "customers": 11928
+        },
+        {
+          "name": "(21.0, 26.0]",
+          "churn_rate": 0.765653,
+          "customers": 13847
+        },
+        {
+          "name": "(26.0, 30.0]",
+          "churn_rate": 0.764775,
+          "customers": 11066
+        }
+      ]
+    },
+    {
+      "feature": "Total Spend",
+      "buckets": [
+        {
+          "name": "(99.999, 271.0]",
+          "churn_rate": 0.528487,
+          "customers": 12918
+        },
+        {
+          "name": "(271.0, 444.0]",
+          "churn_rate": 0.511377,
+          "customers": 12877
+        },
+        {
+          "name": "(444.0, 629.0]",
+          "churn_rate": 0.464319,
+          "customers": 12892
+        },
+        {
+          "name": "(629.0, 815.0]",
+          "churn_rate": 0.434958,
+          "customers": 12861
+        },
+        {
+          "name": "(815.0, 1000.0]",
+          "churn_rate": 0.428894,
+          "customers": 12826
+        }
+      ]
+    },
+    {
+      "feature": "Last Interaction",
+      "buckets": [
+        {
+          "name": "(0.999, 7.0]",
+          "churn_rate": 0.478519,
+          "customers": 14990
+        },
+        {
+          "name": "(7.0, 13.0]",
+          "churn_rate": 0.474808,
+          "customers": 12921
+        },
+        {
+          "name": "(13.0, 18.0]",
+          "churn_rate": 0.467963,
+          "customers": 10800
+        },
+        {
+          "name": "(18.0, 24.0]",
+          "churn_rate": 0.470561,
+          "customers": 12806
+        },
+        {
+          "name": "(24.0, 30.0]",
+          "churn_rate": 0.474839,
+          "customers": 12857
+        }
+      ]
+    }
+  ],
+  "correlation": [
+    {
+      "feature": "Age",
+      "Age": 1.0,
+      "Tenure": -0.0078,
+      "Usage Frequency": -0.0383,
+      "Support Calls": 0.005,
+      "Payment Delay": -0.0161,
+      "Total Spend": 0.0065,
+      "Last Interaction": -0.0001,
+      "Churn": 0.0635
+    },
+    {
+      "feature": "Tenure",
+      "Age": -0.0078,
+      "Tenure": 1.0,
+      "Usage Frequency": 0.0235,
+      "Support Calls": 0.0601,
+      "Payment Delay": 0.056,
+      "Total Spend": 0.0095,
+      "Last Interaction": 0.0058,
+      "Churn": 0.1953
+    },
+    {
+      "feature": "Usage Frequency",
+      "Age": -0.0383,
+      "Tenure": 0.0235,
+      "Usage Frequency": 1.0,
+      "Support Calls": -0.0141,
+      "Payment Delay": 0.0311,
+      "Total Spend": 0.0015,
+      "Last Interaction": -0.0092,
+      "Churn": -0.1151
+    },
+    {
+      "feature": "Support Calls",
+      "Age": 0.005,
+      "Tenure": 0.0601,
+      "Usage Frequency": -0.0141,
+      "Support Calls": 1.0,
+      "Payment Delay": 0.0643,
+      "Total Spend": 0.0217,
+      "Last Interaction": 0.0017,
+      "Churn": 0.3046
+    },
+    {
+      "feature": "Payment Delay",
+      "Age": -0.0161,
+      "Tenure": 0.056,
+      "Usage Frequency": 0.0311,
+      "Support Calls": 0.0643,
+      "Payment Delay": 1.0,
+      "Total Spend": -0.0311,
+      "Last Interaction": -0.0081,
+      "Churn": 0.5574
+    },
+    {
+      "feature": "Total Spend",
+      "Age": 0.0065,
+      "Tenure": 0.0095,
+      "Usage Frequency": 0.0015,
+      "Support Calls": 0.0217,
+      "Payment Delay": -0.0311,
+      "Total Spend": 1.0,
+      "Last Interaction": -0.0077,
+      "Churn": -0.0789
+    },
+    {
+      "feature": "Last Interaction",
+      "Age": -0.0001,
+      "Tenure": 0.0058,
+      "Usage Frequency": -0.0092,
+      "Support Calls": 0.0017,
+      "Payment Delay": -0.0081,
+      "Total Spend": -0.0077,
+      "Last Interaction": 1.0,
+      "Churn": -0.0028
+    },
+    {
+      "feature": "Churn",
+      "Age": 0.0635,
+      "Tenure": 0.1953,
+      "Usage Frequency": -0.1151,
+      "Support Calls": 0.3046,
+      "Payment Delay": 0.5574,
+      "Total Spend": -0.0789,
+      "Last Interaction": -0.0028,
+      "Churn": 1.0
+    }
+  ],
+  "behavior_signals": [
+    {
+      "feature": "Total Spend",
+      "churned_mean": 519.336,
+      "retained_mean": 560.542,
+      "delta": -41.206
+    },
+    {
+      "feature": "Payment Delay",
+      "churned_mean": 22.335,
+      "retained_mean": 12.453,
+      "delta": 9.882
+    },
+    {
+      "feature": "Tenure",
+      "churned_mean": 35.515,
+      "retained_mean": 28.826,
+      "delta": 6.689
+    },
+    {
+      "feature": "Usage Frequency",
+      "churned_mean": 14.011,
+      "retained_mean": 16.043,
+      "delta": -2.032
+    },
+    {
+      "feature": "Support Calls",
+      "churned_mean": 6.401,
+      "retained_mean": 4.501,
+      "delta": 1.9
+    },
+    {
+      "feature": "Age",
+      "churned_mean": 42.902,
+      "retained_mean": 41.133,
+      "delta": 1.77
+    },
+    {
+      "feature": "Last Interaction",
+      "churned_mean": 15.473,
+      "retained_mean": 15.522,
+      "delta": -0.049
+    }
+  ],
+  "audit": {
+    "source_file": "customer_churn_dataset-testing-master.csv",
+    "rows": 64374,
+    "columns": 12,
+    "column_names": [
+      "CustomerID",
+      "Age",
+      "Gender",
+      "Tenure",
+      "Usage Frequency",
+      "Support Calls",
+      "Payment Delay",
+      "Subscription Type",
+      "Contract Length",
+      "Total Spend",
+      "Last Interaction",
+      "Churn"
+    ],
+    "missing_values": {
+      "CustomerID": 0,
+      "Age": 0,
+      "Gender": 0,
+      "Tenure": 0,
+      "Usage Frequency": 0,
+      "Support Calls": 0,
+      "Payment Delay": 0,
+      "Subscription Type": 0,
+      "Contract Length": 0,
+      "Total Spend": 0,
+      "Last Interaction": 0,
+      "Churn": 0
+    },
+    "duplicate_rows": 0,
+    "dtypes": {
+      "CustomerID": "int64",
+      "Age": "int64",
+      "Gender": "str",
+      "Tenure": "int64",
+      "Usage Frequency": "int64",
+      "Support Calls": "int64",
+      "Payment Delay": "int64",
+      "Subscription Type": "str",
+      "Contract Length": "str",
+      "Total Spend": "int64",
+      "Last Interaction": "int64",
+      "Churn": "int64"
+    },
+    "numeric_columns": [
+      "Age",
+      "Tenure",
+      "Usage Frequency",
+      "Support Calls",
+      "Payment Delay",
+      "Total Spend",
+      "Last Interaction"
+    ],
+    "categorical_columns": [
+      "Gender",
+      "Subscription Type",
+      "Contract Length"
+    ],
+    "categorical_unique_values": {
+      "Gender": [
+        "Female",
+        "Male"
+      ],
+      "Subscription Type": [
+        "Basic",
+        "Premium",
+        "Standard"
+      ],
+      "Contract Length": [
+        "Annual",
+        "Monthly",
+        "Quarterly"
+      ]
+    },
+    "target": {
+      "name": "Churn",
+      "unique_values": [
+        0,
+        1
+      ],
+      "counts": {
+        "0": 33881,
+        "1": 30493
+      },
+      "interpretation": "1 = churned, 0 = retained"
+    },
+    "numeric_ranges": {
+      "Age": {
+        "min": 18.0,
+        "max": 65.0,
+        "mean": 41.971
+      },
+      "Tenure": {
+        "min": 1.0,
+        "max": 60.0,
+        "mean": 31.995
+      },
+      "Usage Frequency": {
+        "min": 1.0,
+        "max": 30.0,
+        "mean": 15.08
+      },
+      "Support Calls": {
+        "min": 0.0,
+        "max": 10.0,
+        "mean": 5.401
+      },
+      "Payment Delay": {
+        "min": 0.0,
+        "max": 30.0,
+        "mean": 17.134
+      },
+      "Total Spend": {
+        "min": 100.0,
+        "max": 1000.0,
+        "mean": 541.023
+      },
+      "Last Interaction": {
+        "min": 1.0,
+        "max": 30.0,
+        "mean": 15.499
+      }
+    },
+    "negative_counts": {
+      "Age": 0,
+      "Tenure": 0,
+      "Usage Frequency": 0,
+      "Support Calls": 0,
+      "Payment Delay": 0,
+      "Total Spend": 0,
+      "Last Interaction": 0
+    },
+    "feature_set": [
+      "Age",
+      "Tenure",
+      "Usage Frequency",
+      "Support Calls",
+      "Payment Delay",
+      "Total Spend",
+      "Last Interaction",
+      "Gender",
+      "Subscription Type",
+      "Contract Length"
+    ],
+    "excluded_features": [
+      "CustomerID",
+      "Churn"
+    ],
+    "cleaning_assumptions": [
+      "No rows were removed: the source contains no missing values, duplicate rows, or negative numeric observations.",
+      "Churn is already numeric binary 0/1 and is used only as the target.",
+      "CustomerID is retained for display only and excluded from preprocessing and model training."
+    ]
+  },
+  "feature_importance": [
+    {
+      "feature": "Payment Delay",
+      "importance": 0.44308721
+    },
+    {
+      "feature": "Support Calls",
+      "importance": 0.16673434
+    },
+    {
+      "feature": "Tenure",
+      "importance": 0.11709261
+    },
+    {
+      "feature": "Usage Frequency",
+      "importance": 0.08223932
+    },
+    {
+      "feature": "Total Spend",
+      "importance": 0.04915767
+    },
+    {
+      "feature": "Age",
+      "importance": 0.03708241
+    },
+    {
+      "feature": "Gender_Male",
+      "importance": 0.03341255
+    },
+    {
+      "feature": "Gender_Female",
+      "importance": 0.02934745
+    },
+    {
+      "feature": "Contract Length_Monthly",
+      "importance": 0.01385044
+    },
+    {
+      "feature": "Last Interaction",
+      "importance": 0.00985106
+    },
+    {
+      "feature": "Contract Length_Annual",
+      "importance": 0.00775266
+    },
+    {
+      "feature": "Contract Length_Quarterly",
+      "importance": 0.00597965
+    },
+    {
+      "feature": "Subscription Type_Basic",
+      "importance": 0.00173419
+    },
+    {
+      "feature": "Subscription Type_Premium",
+      "importance": 0.00137032
+    },
+    {
+      "feature": "Subscription Type_Standard",
+      "importance": 0.00130812
+    }
+  ],
+  "model": {
+    "model_name": "Random Forest",
+    "metrics": {
+      "accuracy": 0.998447,
+      "precision": 0.999343,
+      "recall": 0.997377,
+      "f1_score": 0.998359,
+      "training_time_seconds": 0.938,
+      "confusion_matrix": {
+        "true_negative": 6772,
+        "false_positive": 4,
+        "false_negative": 16,
+        "true_positive": 6083
+      }
+    },
+    "models": {
+      "Logistic Regression": {
+        "accuracy": 0.827029,
+        "precision": 0.813573,
+        "recall": 0.823578,
+        "f1_score": 0.818545,
+        "training_time_seconds": 0.146,
+        "confusion_matrix": {
+          "true_negative": 5625,
+          "false_positive": 1151,
+          "false_negative": 1076,
+          "true_positive": 5023
+        }
+      },
+      "Random Forest": {
+        "accuracy": 0.998447,
+        "precision": 0.999343,
+        "recall": 0.997377,
+        "f1_score": 0.998359,
+        "training_time_seconds": 0.938,
+        "confusion_matrix": {
+          "true_negative": 6772,
+          "false_positive": 4,
+          "false_negative": 16,
+          "true_positive": 6083
+        }
+      },
+      "Support Vector Machine": {
+        "accuracy": 0.827029,
+        "precision": 0.813066,
+        "recall": 0.824397,
+        "f1_score": 0.818693,
+        "training_time_seconds": 2.457,
+        "confusion_matrix": {
+          "true_negative": 5620,
+          "false_positive": 1156,
+          "false_negative": 1071,
+          "true_positive": 5028
+        }
+      },
+      "K-Nearest Neighbors": {
+        "accuracy": 0.916505,
+        "precision": 0.883629,
+        "recall": 0.94868,
+        "f1_score": 0.915,
+        "training_time_seconds": 4.058,
+        "confusion_matrix": {
+          "true_negative": 6014,
+          "false_positive": 762,
+          "false_negative": 313,
+          "true_positive": 5786
+        }
+      }
+    },
+    "training_rows": 51499,
+    "testing_rows": 12875,
+    "features": [
+      "Age",
+      "Tenure",
+      "Usage Frequency",
+      "Support Calls",
+      "Payment Delay",
+      "Total Spend",
+      "Last Interaction",
+      "Gender",
+      "Subscription Type",
+      "Contract Length"
+    ],
+    "numeric_features": [
+      "Age",
+      "Tenure",
+      "Usage Frequency",
+      "Support Calls",
+      "Payment Delay",
+      "Total Spend",
+      "Last Interaction"
+    ],
+    "categorical_features": [
+      "Gender",
+      "Subscription Type",
+      "Contract Length"
+    ],
+    "encoded_feature_count": 15,
+    "selection_rule": "Highest held-out F1 score, then recall, then precision.",
+    "split": {
+      "test_size": 0.2,
+      "random_state": 42,
+      "stratified": true
+    },
+    "trained_at": "2026-08-24T18:32:09.681388+00:00",
+    "total_training_time_seconds": 7.635,
+    "dataset_audit": {
+      "source_file": "customer_churn_dataset-testing-master.csv",
+      "rows": 64374,
+      "columns": 12,
+      "column_names": [
+        "CustomerID",
+        "Age",
+        "Gender",
+        "Tenure",
+        "Usage Frequency",
+        "Support Calls",
+        "Payment Delay",
+        "Subscription Type",
+        "Contract Length",
+        "Total Spend",
+        "Last Interaction",
+        "Churn"
+      ],
+      "missing_values": {
+        "CustomerID": 0,
+        "Age": 0,
+        "Gender": 0,
+        "Tenure": 0,
+        "Usage Frequency": 0,
+        "Support Calls": 0,
+        "Payment Delay": 0,
+        "Subscription Type": 0,
+        "Contract Length": 0,
+        "Total Spend": 0,
+        "Last Interaction": 0,
+        "Churn": 0
+      },
+      "duplicate_rows": 0,
+      "dtypes": {
+        "CustomerID": "int64",
+        "Age": "int64",
+        "Gender": "str",
+        "Tenure": "int64",
+        "Usage Frequency": "int64",
+        "Support Calls": "int64",
+        "Payment Delay": "int64",
+        "Subscription Type": "str",
+        "Contract Length": "str",
+        "Total Spend": "int64",
+        "Last Interaction": "int64",
+        "Churn": "int64"
+      },
+      "numeric_columns": [
+        "Age",
+        "Tenure",
+        "Usage Frequency",
+        "Support Calls",
+        "Payment Delay",
+        "Total Spend",
+        "Last Interaction"
+      ],
+      "categorical_columns": [
+        "Gender",
+        "Subscription Type",
+        "Contract Length"
+      ],
+      "categorical_unique_values": {
+        "Gender": [
+          "Female",
+          "Male"
+        ],
+        "Subscription Type": [
+          "Basic",
+          "Premium",
+          "Standard"
+        ],
+        "Contract Length": [
+          "Annual",
+          "Monthly",
+          "Quarterly"
+        ]
+      },
+      "target": {
+        "name": "Churn",
+        "unique_values": [
+          0,
+          1
+        ],
+        "counts": {
+          "0": 33881,
+          "1": 30493
+        },
+        "interpretation": "1 = churned, 0 = retained"
+      },
+      "numeric_ranges": {
+        "Age": {
+          "min": 18.0,
+          "max": 65.0,
+          "mean": 41.971
+        },
+        "Tenure": {
+          "min": 1.0,
+          "max": 60.0,
+          "mean": 31.995
+        },
+        "Usage Frequency": {
+          "min": 1.0,
+          "max": 30.0,
+          "mean": 15.08
+        },
+        "Support Calls": {
+          "min": 0.0,
+          "max": 10.0,
+          "mean": 5.401
+        },
+        "Payment Delay": {
+          "min": 0.0,
+          "max": 30.0,
+          "mean": 17.134
+        },
+        "Total Spend": {
+          "min": 100.0,
+          "max": 1000.0,
+          "mean": 541.023
+        },
+        "Last Interaction": {
+          "min": 1.0,
+          "max": 30.0,
+          "mean": 15.499
+        }
+      },
+      "negative_counts": {
+        "Age": 0,
+        "Tenure": 0,
+        "Usage Frequency": 0,
+        "Support Calls": 0,
+        "Payment Delay": 0,
+        "Total Spend": 0,
+        "Last Interaction": 0
+      },
+      "feature_set": [
+        "Age",
+        "Tenure",
+        "Usage Frequency",
+        "Support Calls",
+        "Payment Delay",
+        "Total Spend",
+        "Last Interaction",
+        "Gender",
+        "Subscription Type",
+        "Contract Length"
+      ],
+      "excluded_features": [
+        "CustomerID",
+        "Churn"
+      ],
+      "cleaning_assumptions": [
+        "No rows were removed: the source contains no missing values, duplicate rows, or negative numeric observations.",
+        "Churn is already numeric binary 0/1 and is used only as the target.",
+        "CustomerID is retained for display only and excluded from preprocessing and model training."
+      ]
+    }
+  }
+}
