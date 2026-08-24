@@ -67,3 +67,7 @@ _None unresolved after typecheck, production build, tests, and preview verificat
 
 - [x] Render a data-derived demographic insight sentence identifying the highest-churn age band or gender segment.
 - [x] Narrow the empty-state completion note to the verified zero-result dataset explorer state unless additional empty views are implemented.
+
+## Documentation
+
+- [x] Create an attractive, accurate GitHub README covering ChurnIQ, the real dataset-backed ML workflow, setup, architecture, API procedures, validation results, and usage.
